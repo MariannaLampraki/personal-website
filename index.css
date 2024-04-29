@@ -1,0 +1,59 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); /*Color Scheme*/
+/*Color Scheme*/
+:root {
+    --white: #F0FAF6;
+    --green: #31e981;
+    --grey: #1a2930;
+    --black: #070c0d;
+}
+/*Selection*/
+::selection{
+    color: var(--green);
+    background-color: var(--grey);
+}
+body {
+    background-color: var(--white);
+    margin:0;
+}
+header{
+    height: 100vh;
+    background-color: var(--black);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: var(--green);
+}
+header h1 {
+    margin-top: 0;
+    padding-top: 40vh;
+    background-color: var(--green);
+    color: var(--black);
+}
+.active {
+    font-weight: bold;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 2.5vh;
+}
+nav a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+nav {
+    background-color: var(--grey);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0.5vh;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+section {
+    height: 70vh;
+}
