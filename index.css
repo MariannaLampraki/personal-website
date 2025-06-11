@@ -8,7 +8,7 @@
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Exo', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     color: var(--gray);
 }
 
@@ -18,9 +18,14 @@ p,a,button {
 
 p { color: var(--gray); }
 
-a { color: var(--accent); }
+a { color: var(--accent); font-weight: bold;}
 
-button { background-color: var(--accent); color:var(--gray); }
+button {
+    background-color: var(--accent);
+    color:var(--white);
+    border: none;
+    padding: 2%;
+}
 
 body {
     background-color: var(--white);
