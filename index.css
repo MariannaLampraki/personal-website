@@ -20,7 +20,7 @@ p { color: var(--dark); }
 
 a { color: var(--accent); font-weight: bold;}
 
-button {
+header button, main button {
     background-color: var(--accent);
     color:var(--white);
     border: none;
