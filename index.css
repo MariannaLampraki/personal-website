@@ -2,21 +2,21 @@
 
 :root {
     --white: #ffffff;
-    --gray: #2C2C2C;
+    --dark: #2C2C2C;
     --accent: #3d0086;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Exo', sans-serif;
     font-weight: 900;
-    color: var(--gray);
+    color: var(--dark);
 }
 
 p,a,button {
     font-family: 'Roboto Slab', serif;
 }
 
-p { color: var(--gray); }
+p { color: var(--dark); }
 
 a { color: var(--accent); font-weight: bold;}
 
