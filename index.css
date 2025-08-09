@@ -35,3 +35,15 @@ body {
 .container {
     padding: 10px;
 }
+
+nav {
+    letter-spacing: 2px;
+}
+
+nav a {
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: solid black;
+}
