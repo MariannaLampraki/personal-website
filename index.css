@@ -1,34 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-    --white: #ffffff;
-    --dark: #2C2C2C;
+    --light: #ffffff;
+    --darker: #2C2C2C;
     --accent: #3d0086;
+}
+
+header button {
+    margin-top: 20px;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Exo', sans-serif;
     font-weight: 900;
-    color: var(--dark);
+    color: var(--darker);
 }
 
 p,a,button {
     font-family: 'Roboto Slab', serif;
 }
 
-p { color: var(--dark); }
+p { color: var(--darker); }
 
 a { color: var(--accent); font-weight: bold;}
 
-header button, main button {
+button {
     background-color: var(--accent);
-    color:var(--white);
-    border: none;
+    color:var(--light);
+    border: var(--accent) solid 2px;
     padding: 10px;
 }
 
+button:hover {
+    background-color: var(--light);
+    color: var(--accent);
+    border: var(--accent) solid 2px;
+}
+
 body {
-    background-color: var(--white);
+    background-color: var(--light);
     margin: 10px;
 }
 
@@ -41,9 +51,47 @@ nav {
 }
 
 nav a {
-    border-bottom: 2px solid transparent;
+    border-bottom: transparent 2px solid;
+    margin: 0px 25px;
 }
 
 nav a:hover {
-    border-bottom: solid black;
+    border-bottom: var(--accent) 2px solid;
+    color: var(--accent) !important;
+}
+
+nav .active {
+    border-bottom: var(--darker) 2px solid;
+    color: var(--darker) !important;
+}
+
+header {
+    margin:15px;
+    padding:10px;
+}
+
+h1, div {
+    max-width: auto;
+    margin:15px 0px;
+}
+
+#projects-container, #skills-container {
+    padding:15px 70px;
+}
+
+
+#projects-container p {
+    margin-bottom: 50px;
+}
+
+.jumbotron { 
+    background-color: var(--darker) !important;
+}
+
+.jumbotron p, .jumbotron h4, .jumbotron h6, .jumbotron h1 {
+    color: var(--light) !important;
+}
+
+footer a{
+    margin:auto 10px;
 }
